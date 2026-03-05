@@ -1,12 +1,33 @@
-"""Data loader -- reads parquet files from the repo or a configured path."""
+"""Data loader -- reads parquet files, auto-downloading from GitHub on first use."""
 
 from __future__ import annotations
 
 import os
+import sys
+import urllib.request
 from pathlib import Path
 from typing import Optional
 
 import pandas as pd
+
+_CACHE_DIR = Path.home() / ".cache" / "assembly-bills"
+_REPO_RAW = "https://raw.githubusercontent.com/kyusik-yang/korean-assembly-bills/main/data"
+_FILES = ["bills.parquet", "bill_texts.parquet", "proposers.parquet", "mp_metadata.parquet"]
+
+
+def _download_data(dest: Path) -> None:
+    """Download all parquet files from GitHub."""
+    dest.mkdir(parents=True, exist_ok=True)
+    total = len(_FILES)
+    for i, fname in enumerate(_FILES, 1):
+        target = dest / fname
+        if target.exists():
+            continue
+        url = f"{_REPO_RAW}/{fname}"
+        print(f"  downloading {fname} ({i}/{total})...", end=" ", flush=True)
+        urllib.request.urlretrieve(url, target)
+        size_mb = target.stat().st_size / 1024 / 1024
+        print(f"{size_mb:.1f} MB", flush=True)
 
 
 def _resolve_data_dir() -> Path:
@@ -14,6 +35,7 @@ def _resolve_data_dir() -> Path:
     1. ASSEMBLY_BILLS_DATA env var
     2. ./data/ relative to CWD
     3. Relative to this file (editable install or running from repo)
+    4. ~/.cache/assembly-bills/ (auto-downloaded)
     """
     # 1. Env var
     env = os.environ.get("ASSEMBLY_BILLS_DATA")
@@ -32,12 +54,14 @@ def _resolve_data_dir() -> Path:
     if (pkg_data / "bills.parquet").exists():
         return pkg_data
 
-    raise FileNotFoundError(
-        "Data directory not found. Either:\n"
-        "  1. Run from the repo root (where data/ is)\n"
-        "  2. Set ASSEMBLY_BILLS_DATA=/path/to/data\n"
-        "  3. git clone the repo first: git clone https://github.com/kyusik-yang/korean-assembly-bills"
-    )
+    # 4. Auto-download to cache
+    if (_CACHE_DIR / "bills.parquet").exists():
+        return _CACHE_DIR
+
+    print("assembly-bills: data not found locally. downloading from GitHub (~40 MB)...")
+    _download_data(_CACHE_DIR)
+    print("  done. cached at", _CACHE_DIR)
+    return _CACHE_DIR
 
 
 def load_bills(columns: Optional[list] = None) -> pd.DataFrame:
