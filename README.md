@@ -261,3 +261,7 @@ CC BY 4.0. The underlying legislative data is public information from the Korean
 
 - [open-assembly-mcp](https://github.com/kyusik-yang/open-assembly-mcp) -- MCP server for Korean National Assembly data
 - [assembly-explorer](https://national-assembly-kr.streamlit.app) -- Interactive explorer for Korean legislative data
+
+---
+
+<sub>Built with [Claude Code](https://claude.ai/claude-code). To study bills, you need API bills.</sub>
