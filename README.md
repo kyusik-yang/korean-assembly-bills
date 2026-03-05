@@ -11,7 +11,7 @@
 The propose-reason text (제안이유) was scraped in full from the [National Assembly Legislative Information System](https://likms.assembly.go.kr/bill/main.do). 99.4% of bills have text available. This is the first publicly available dataset containing the full propose-reason texts for Korean legislative bills.
 
 <picture>
-  <img alt="assembly-bills info" src="docs/cli-info.svg" width="600">
+  <img alt="assembly-bills info" src="docs/cli-info.png" width="600">
 </picture>
 
 ---
@@ -37,11 +37,11 @@ assembly-bills export ai.csv --keyword "인공지능" --with-text
 ```
 
 <picture>
-  <img alt="assembly-bills search" src="docs/cli-search.svg" width="700">
+  <img alt="assembly-bills search" src="docs/cli-search.png" width="700">
 </picture>
 
 <picture>
-  <img alt="assembly-bills stats" src="docs/cli-stats.svg" width="600">
+  <img alt="assembly-bills stats" src="docs/cli-stats.png" width="600">
 </picture>
 
 ### Option B: Python
