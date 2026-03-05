@@ -20,6 +20,8 @@ The propose-reason text (제안이유) was scraped in full from the [National As
 pip install korean-assembly-bills
 ```
 
+> If `pip` doesn't work, try `pip3 install korean-assembly-bills` or `python3 -m pip install korean-assembly-bills`. This is common on macOS where `pip` may not be in your PATH.
+
 ```bash
 assembly-bills info                          # dataset summary
 assembly-bills search "인공지능"              # search by keyword
