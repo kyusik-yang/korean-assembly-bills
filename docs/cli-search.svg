@@ -1,0 +1,123 @@
+<svg class="rich-terminal" viewBox="0 0 1141 440.4" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated with Rich https://www.textualize.io -->
+    <style>
+
+    
+    
+
+    .terminal-1079815702-matrix {
+        font-family: "Nanum Gothic Coding", monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .terminal-1079815702-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .terminal-1079815702-r1 { fill: #c5c8c6 }
+.terminal-1079815702-r2 { fill: #68a0b3;font-weight: bold }
+.terminal-1079815702-r3 { fill: #868887 }
+.terminal-1079815702-r4 { fill: #98a84b }
+.terminal-1079815702-r5 { fill: #c5c8c6;font-weight: bold }
+.terminal-1079815702-r6 { fill: #4e707b;font-weight: bold }
+    
+    @font-face {
+        font-family: "Nanum Gothic Coding";
+        src: url("https://fonts.gstatic.com/s/nanumgothiccoding/v27/8QIVdjzHisX_8vv59_xMxtPFW4IXROwsy6ExUM1W.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Nanum Gothic Coding";
+        src: url("https://fonts.gstatic.com/s/nanumgothiccoding/v27/8QIYdjzHisX_8vv59_xMxtPFW4IXROws8xgecsB89N5U.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    </style>
+
+    <defs>
+    <clipPath id="terminal-1079815702-clip-terminal">
+      <rect x="0" y="0" width="1121.3999999999999" height="389.4" />
+    </clipPath>
+    <clipPath id="terminal-1079815702-line-0">
+    <rect x="0" y="1.5" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-1">
+    <rect x="0" y="25.9" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-2">
+    <rect x="0" y="50.3" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-3">
+    <rect x="0" y="74.7" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-4">
+    <rect x="0" y="99.1" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-5">
+    <rect x="0" y="123.5" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-6">
+    <rect x="0" y="147.9" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-7">
+    <rect x="0" y="172.3" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-8">
+    <rect x="0" y="196.7" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-9">
+    <rect x="0" y="221.1" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-10">
+    <rect x="0" y="245.5" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-11">
+    <rect x="0" y="269.9" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-12">
+    <rect x="0" y="294.3" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-13">
+    <rect x="0" y="318.7" width="1122.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1079815702-line-14">
+    <rect x="0" y="343.1" width="1122.4" height="24.65"/>
+            </clipPath>
+    </defs>
+
+    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="1139" height="438.4" rx="8"/><text class="terminal-1079815702-title" fill="#c5c8c6" text-anchor="middle" x="569" y="27">assembly-bills&#160;search</text>
+            <g transform="translate(26,22)">
+            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
+            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
+            <circle cx="44" cy="0" r="7" fill="#28c840"/>
+            </g>
+        
+    <g transform="translate(9, 41)" clip-path="url(#terminal-1079815702-clip-terminal)">
+    
+    <g class="terminal-1079815702-matrix">
+    <text class="terminal-1079815702-r1" x="1122.4" y="20" textLength="12.2" clip-path="url(#terminal-1079815702-line-0)">
+</text><text class="terminal-1079815702-r2" x="24.4" y="44.4" textLength="24.4" clip-path="url(#terminal-1079815702-line-1)">74</text><text class="terminal-1079815702-r3" x="61" y="44.4" textLength="134.2" clip-path="url(#terminal-1079815702-line-1)">matches&#160;for</text><text class="terminal-1079815702-r4" x="207.4" y="44.4" textLength="73.2" clip-path="url(#terminal-1079815702-line-1)">&#x27;인공지능&#x27;</text><text class="terminal-1079815702-r1" x="1122.4" y="44.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-1)">
+</text><text class="terminal-1079815702-r1" x="1122.4" y="68.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-2)">
+</text><text class="terminal-1079815702-r3" x="0" y="93.2" textLength="1122.4" clip-path="url(#terminal-1079815702-line-3)">╭─────┬──────────┬────────────┬────────────┬──────────────────────────────┬────────────────╮</text><text class="terminal-1079815702-r1" x="1122.4" y="93.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-3)">
+</text><text class="terminal-1079815702-r3" x="0" y="117.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-4)">│</text><text class="terminal-1079815702-r5" x="24.4" y="117.6" textLength="36.6" clip-path="url(#terminal-1079815702-line-4)">age</text><text class="terminal-1079815702-r3" x="73.2" y="117.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-4)">│</text><text class="terminal-1079815702-r5" x="97.6" y="117.6" textLength="97.6" clip-path="url(#terminal-1079815702-line-4)">bill_no&#160;</text><text class="terminal-1079815702-r3" x="207.4" y="117.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-4)">│</text><text class="terminal-1079815702-r5" x="231.8" y="117.6" textLength="122" clip-path="url(#terminal-1079815702-line-4)">date&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1079815702-r3" x="366" y="117.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-4)">│</text><text class="terminal-1079815702-r5" x="390.4" y="117.6" textLength="122" clip-path="url(#terminal-1079815702-line-4)">committee&#160;</text><text class="terminal-1079815702-r3" x="524.6" y="117.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-4)">│</text><text class="terminal-1079815702-r5" x="549" y="117.6" textLength="341.6" clip-path="url(#terminal-1079815702-line-4)">bill_name&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1079815702-r3" x="902.8" y="117.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-4)">│</text><text class="terminal-1079815702-r5" x="927.2" y="117.6" textLength="170.8" clip-path="url(#terminal-1079815702-line-4)">proposer&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1079815702-r3" x="1110.2" y="117.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-4)">│</text><text class="terminal-1079815702-r1" x="1122.4" y="117.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-4)">
+</text><text class="terminal-1079815702-r3" x="0" y="142" textLength="1122.4" clip-path="url(#terminal-1079815702-line-5)">├─────┼──────────┼────────────┼────────────┼──────────────────────────────┼────────────────┤</text><text class="terminal-1079815702-r1" x="1122.4" y="142" textLength="12.2" clip-path="url(#terminal-1079815702-line-5)">
+</text><text class="terminal-1079815702-r3" x="0" y="166.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-6)">│</text><text class="terminal-1079815702-r3" x="24.4" y="166.4" textLength="36.6" clip-path="url(#terminal-1079815702-line-6)">&#160;20</text><text class="terminal-1079815702-r3" x="73.2" y="166.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-6)">│</text><text class="terminal-1079815702-r5" x="97.6" y="166.4" textLength="97.6" clip-path="url(#terminal-1079815702-line-6)">2023922&#160;</text><text class="terminal-1079815702-r3" x="207.4" y="166.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-6)">│</text><text class="terminal-1079815702-r1" x="231.8" y="166.4" textLength="122" clip-path="url(#terminal-1079815702-line-6)">2019-11-21</text><text class="terminal-1079815702-r3" x="366" y="166.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-6)">│</text><text class="terminal-1079815702-r1" x="390.4" y="166.4" textLength="73.2" clip-path="url(#terminal-1079815702-line-6)">과학기술&#160;…</text><text class="terminal-1079815702-r3" x="524.6" y="166.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-6)">│</text><text class="terminal-1079815702-r1" x="549" y="166.4" textLength="195.2" clip-path="url(#terminal-1079815702-line-6)">인공지능산업&#160;진흥에&#160;관한&#160;법…</text><text class="terminal-1079815702-r3" x="902.8" y="166.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-6)">│</text><text class="terminal-1079815702-r3" x="927.2" y="166.4" textLength="97.6" clip-path="url(#terminal-1079815702-line-6)">김경진의원&#160;등…</text><text class="terminal-1079815702-r3" x="1110.2" y="166.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-6)">│</text><text class="terminal-1079815702-r1" x="1122.4" y="166.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-6)">
+</text><text class="terminal-1079815702-r3" x="0" y="190.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-7)">│</text><text class="terminal-1079815702-r3" x="24.4" y="190.8" textLength="36.6" clip-path="url(#terminal-1079815702-line-7)">&#160;20</text><text class="terminal-1079815702-r3" x="73.2" y="190.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-7)">│</text><text class="terminal-1079815702-r5" x="97.6" y="190.8" textLength="97.6" clip-path="url(#terminal-1079815702-line-7)">2022593&#160;</text><text class="terminal-1079815702-r3" x="207.4" y="190.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-7)">│</text><text class="terminal-1079815702-r1" x="231.8" y="190.8" textLength="122" clip-path="url(#terminal-1079815702-line-7)">2019-09-23</text><text class="terminal-1079815702-r3" x="366" y="190.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-7)">│</text><text class="terminal-1079815702-r1" x="390.4" y="190.8" textLength="73.2" clip-path="url(#terminal-1079815702-line-7)">과학기술&#160;…</text><text class="terminal-1079815702-r3" x="524.6" y="190.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-7)">│</text><text class="terminal-1079815702-r1" x="549" y="190.8" textLength="207.4" clip-path="url(#terminal-1079815702-line-7)">인공지능&#160;기술개발&#160;및&#160;산업&#160;&#160;…</text><text class="terminal-1079815702-r3" x="902.8" y="190.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-7)">│</text><text class="terminal-1079815702-r3" x="927.2" y="190.8" textLength="97.6" clip-path="url(#terminal-1079815702-line-7)">이상민의원&#160;등…</text><text class="terminal-1079815702-r3" x="1110.2" y="190.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-7)">│</text><text class="terminal-1079815702-r1" x="1122.4" y="190.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-7)">
+</text><text class="terminal-1079815702-r3" x="0" y="215.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-8)">│</text><text class="terminal-1079815702-r3" x="24.4" y="215.2" textLength="36.6" clip-path="url(#terminal-1079815702-line-8)">&#160;21</text><text class="terminal-1079815702-r3" x="73.2" y="215.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-8)">│</text><text class="terminal-1079815702-r5" x="97.6" y="215.2" textLength="97.6" clip-path="url(#terminal-1079815702-line-8)">2123709&#160;</text><text class="terminal-1079815702-r3" x="207.4" y="215.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-8)">│</text><text class="terminal-1079815702-r1" x="231.8" y="215.2" textLength="122" clip-path="url(#terminal-1079815702-line-8)">2023-08-08</text><text class="terminal-1079815702-r3" x="366" y="215.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-8)">│</text><text class="terminal-1079815702-r1" x="390.4" y="215.2" textLength="73.2" clip-path="url(#terminal-1079815702-line-8)">과학기술&#160;…</text><text class="terminal-1079815702-r3" x="524.6" y="215.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-8)">│</text><text class="terminal-1079815702-r1" x="549" y="215.2" textLength="207.4" clip-path="url(#terminal-1079815702-line-8)">인공지능&#160;책임&#160;및&#160;규제법안&#160;&#160;&#160;</text><text class="terminal-1079815702-r3" x="902.8" y="215.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-8)">│</text><text class="terminal-1079815702-r3" x="927.2" y="215.2" textLength="97.6" clip-path="url(#terminal-1079815702-line-8)">안철수의원&#160;등…</text><text class="terminal-1079815702-r3" x="1110.2" y="215.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-8)">│</text><text class="terminal-1079815702-r1" x="1122.4" y="215.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-8)">
+</text><text class="terminal-1079815702-r3" x="0" y="239.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-9)">│</text><text class="terminal-1079815702-r3" x="24.4" y="239.6" textLength="36.6" clip-path="url(#terminal-1079815702-line-9)">&#160;21</text><text class="terminal-1079815702-r3" x="73.2" y="239.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-9)">│</text><text class="terminal-1079815702-r5" x="97.6" y="239.6" textLength="97.6" clip-path="url(#terminal-1079815702-line-9)">2120353&#160;</text><text class="terminal-1079815702-r3" x="207.4" y="239.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-9)">│</text><text class="terminal-1079815702-r1" x="231.8" y="239.6" textLength="122" clip-path="url(#terminal-1079815702-line-9)">2023-02-28</text><text class="terminal-1079815702-r3" x="366" y="239.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-9)">│</text><text class="terminal-1079815702-r1" x="390.4" y="239.6" textLength="73.2" clip-path="url(#terminal-1079815702-line-9)">과학기술&#160;…</text><text class="terminal-1079815702-r3" x="524.6" y="239.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-9)">│</text><text class="terminal-1079815702-r1" x="549" y="239.6" textLength="244" clip-path="url(#terminal-1079815702-line-9)">인공지능책임법안&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-1079815702-r3" x="902.8" y="239.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-9)">│</text><text class="terminal-1079815702-r3" x="927.2" y="239.6" textLength="109.8" clip-path="url(#terminal-1079815702-line-9)">황희의원&#160;등&#160;1…</text><text class="terminal-1079815702-r3" x="1110.2" y="239.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-9)">│</text><text class="terminal-1079815702-r1" x="1122.4" y="239.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-9)">
+</text><text class="terminal-1079815702-r3" x="0" y="264" textLength="12.2" clip-path="url(#terminal-1079815702-line-10)">│</text><text class="terminal-1079815702-r3" x="24.4" y="264" textLength="36.6" clip-path="url(#terminal-1079815702-line-10)">&#160;21</text><text class="terminal-1079815702-r3" x="73.2" y="264" textLength="12.2" clip-path="url(#terminal-1079815702-line-10)">│</text><text class="terminal-1079815702-r5" x="97.6" y="264" textLength="97.6" clip-path="url(#terminal-1079815702-line-10)">2118726&#160;</text><text class="terminal-1079815702-r3" x="207.4" y="264" textLength="12.2" clip-path="url(#terminal-1079815702-line-10)">│</text><text class="terminal-1079815702-r1" x="231.8" y="264" textLength="122" clip-path="url(#terminal-1079815702-line-10)">2022-12-07</text><text class="terminal-1079815702-r3" x="366" y="264" textLength="12.2" clip-path="url(#terminal-1079815702-line-10)">│</text><text class="terminal-1079815702-r1" x="390.4" y="264" textLength="73.2" clip-path="url(#terminal-1079815702-line-10)">과학기술&#160;…</text><text class="terminal-1079815702-r3" x="524.6" y="264" textLength="12.2" clip-path="url(#terminal-1079815702-line-10)">│</text><text class="terminal-1079815702-r1" x="549" y="264" textLength="207.4" clip-path="url(#terminal-1079815702-line-10)">인공지능산업&#160;육성&#160;및&#160;신뢰&#160;&#160;…</text><text class="terminal-1079815702-r3" x="902.8" y="264" textLength="12.2" clip-path="url(#terminal-1079815702-line-10)">│</text><text class="terminal-1079815702-r3" x="927.2" y="264" textLength="97.6" clip-path="url(#terminal-1079815702-line-10)">윤두현의원&#160;등…</text><text class="terminal-1079815702-r3" x="1110.2" y="264" textLength="12.2" clip-path="url(#terminal-1079815702-line-10)">│</text><text class="terminal-1079815702-r1" x="1122.4" y="264" textLength="12.2" clip-path="url(#terminal-1079815702-line-10)">
+</text><text class="terminal-1079815702-r3" x="0" y="288.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-11)">│</text><text class="terminal-1079815702-r3" x="24.4" y="288.4" textLength="36.6" clip-path="url(#terminal-1079815702-line-11)">&#160;22</text><text class="terminal-1079815702-r3" x="73.2" y="288.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-11)">│</text><text class="terminal-1079815702-r5" x="97.6" y="288.4" textLength="97.6" clip-path="url(#terminal-1079815702-line-11)">2216804&#160;</text><text class="terminal-1079815702-r3" x="207.4" y="288.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-11)">│</text><text class="terminal-1079815702-r1" x="231.8" y="288.4" textLength="122" clip-path="url(#terminal-1079815702-line-11)">2026-02-12</text><text class="terminal-1079815702-r3" x="366" y="288.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-11)">│</text><text class="terminal-1079815702-r1" x="390.4" y="288.4" textLength="73.2" clip-path="url(#terminal-1079815702-line-11)">과학기술&#160;…</text><text class="terminal-1079815702-r3" x="524.6" y="288.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-11)">│</text><text class="terminal-1079815702-r1" x="549" y="288.4" textLength="207.4" clip-path="url(#terminal-1079815702-line-11)">인공지능&#160;발전과&#160;신뢰&#160;기반&#160;&#160;…</text><text class="terminal-1079815702-r3" x="902.8" y="288.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-11)">│</text><text class="terminal-1079815702-r3" x="927.2" y="288.4" textLength="97.6" clip-path="url(#terminal-1079815702-line-11)">이상휘의원&#160;등…</text><text class="terminal-1079815702-r3" x="1110.2" y="288.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-11)">│</text><text class="terminal-1079815702-r1" x="1122.4" y="288.4" textLength="12.2" clip-path="url(#terminal-1079815702-line-11)">
+</text><text class="terminal-1079815702-r3" x="0" y="312.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-12)">│</text><text class="terminal-1079815702-r3" x="24.4" y="312.8" textLength="36.6" clip-path="url(#terminal-1079815702-line-12)">&#160;22</text><text class="terminal-1079815702-r3" x="73.2" y="312.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-12)">│</text><text class="terminal-1079815702-r5" x="97.6" y="312.8" textLength="97.6" clip-path="url(#terminal-1079815702-line-12)">2216670&#160;</text><text class="terminal-1079815702-r3" x="207.4" y="312.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-12)">│</text><text class="terminal-1079815702-r1" x="231.8" y="312.8" textLength="122" clip-path="url(#terminal-1079815702-line-12)">2026-02-09</text><text class="terminal-1079815702-r3" x="366" y="312.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-12)">│</text><text class="terminal-1079815702-r1" x="390.4" y="312.8" textLength="73.2" clip-path="url(#terminal-1079815702-line-12)">산업통상&#160;…</text><text class="terminal-1079815702-r3" x="524.6" y="312.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-12)">│</text><text class="terminal-1079815702-r1" x="549" y="312.8" textLength="195.2" clip-path="url(#terminal-1079815702-line-12)">중소기업&#160;인공지능&#160;전환&#160;지원…</text><text class="terminal-1079815702-r3" x="902.8" y="312.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-12)">│</text><text class="terminal-1079815702-r3" x="927.2" y="312.8" textLength="97.6" clip-path="url(#terminal-1079815702-line-12)">김종민의원&#160;등…</text><text class="terminal-1079815702-r3" x="1110.2" y="312.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-12)">│</text><text class="terminal-1079815702-r1" x="1122.4" y="312.8" textLength="12.2" clip-path="url(#terminal-1079815702-line-12)">
+</text><text class="terminal-1079815702-r3" x="0" y="337.2" textLength="1122.4" clip-path="url(#terminal-1079815702-line-13)">╰─────┴──────────┴────────────┴────────────┴──────────────────────────────┴────────────────╯</text><text class="terminal-1079815702-r1" x="1122.4" y="337.2" textLength="12.2" clip-path="url(#terminal-1079815702-line-13)">
+</text><text class="terminal-1079815702-r3" x="24.4" y="361.6" textLength="97.6" clip-path="url(#terminal-1079815702-line-14)">showing&#160;</text><text class="terminal-1079815702-r6" x="122" y="361.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-14)">7</text><text class="terminal-1079815702-r3" x="134.2" y="361.6" textLength="48.8" clip-path="url(#terminal-1079815702-line-14)">&#160;of&#160;</text><text class="terminal-1079815702-r6" x="183" y="361.6" textLength="24.4" clip-path="url(#terminal-1079815702-line-14)">74</text><text class="terminal-1079815702-r1" x="1122.4" y="361.6" textLength="12.2" clip-path="url(#terminal-1079815702-line-14)">
+</text><text class="terminal-1079815702-r1" x="1122.4" y="386" textLength="12.2" clip-path="url(#terminal-1079815702-line-15)">
+</text>
+    </g>
+    </g>
+</svg>
