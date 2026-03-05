@@ -36,14 +36,6 @@ assembly-bills stats --by party              # statistics
 assembly-bills export ai.csv --keyword "인공지능" --with-text
 ```
 
-<picture>
-  <img alt="assembly-bills search" src="docs/cli-search.svg" width="700">
-</picture>
-
-<picture>
-  <img alt="assembly-bills stats" src="docs/cli-stats.svg" width="600">
-</picture>
-
 ### Option B: Python
 
 ```python
