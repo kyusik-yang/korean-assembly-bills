@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "korean-assembly-bills"
+version = "0.1.0"
+description = "60,925 South Korean National Assembly bills (20th-22nd) with full propose-reason texts"
+readme = "README.md"
+license = "CC-BY-4.0"
+requires-python = ">=3.9"
+authors = [
+    { name = "Kyusik Yang", email = "kyusik.yang@nyu.edu" },
+]
+keywords = ["south-korea", "national-assembly", "legislation", "bills", "nlp", "political-science"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "pandas>=1.5",
+    "pyarrow>=10.0",
+    "rich>=12.0",
+    "click>=8.0",
+]
+
+[project.optional-dependencies]
+app = [
+    "streamlit>=1.30",
+    "plotly>=5.0",
+]
+
+[project.scripts]
+assembly-bills = "korean_assembly_bills.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/kyusik-yang/korean-assembly-bills"
+Repository = "https://github.com/kyusik-yang/korean-assembly-bills"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/korean_assembly_bills"]
