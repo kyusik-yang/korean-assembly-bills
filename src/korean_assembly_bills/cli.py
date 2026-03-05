@@ -22,25 +22,8 @@ from korean_assembly_bills.loader import (
 
 console = Console()
 
-# ASCII art banner (figlet "assembly bills" style)
-_BANNER_LINES = [
-    r"                               _     _         _     _ _ _     ",
-    r"   __ _ ___ ___  ___ _ __ ___ | |__ | |_   _  | |__ (_) | |___",
-    r"  / _` / __/ __|/ _ \ '_ ` _ \| '_ \| | | | | | '_ \| | | / __|",
-    r" | (_| \__ \__ \  __/ | | | | | |_) | | |_| | | |_) | | | \__ \\",
-    r"  \__,_|___/___/\___|_| |_| |_|_.__/|_|\__, | |_.__/|_|_|_|___/",
-    r"                                        |___/                   ",
-]
-
-# Gradient: teal -> cyan -> blue (matching open-assembly-mcp style)
-_GRADIENT = [
-    (0, 210, 190),
-    (0, 195, 210),
-    (30, 180, 225),
-    (60, 165, 235),
-    (90, 150, 240),
-    (110, 140, 245),
-]
+# NYU violet
+_ACCENT = (165, 110, 240)
 
 _COLOR = hasattr(sys.stdout, "isatty") and sys.stdout.isatty()
 
@@ -54,21 +37,26 @@ def _dim(text: str) -> str:
 
 
 def _print_banner() -> None:
+    r, g, b = _ACCENT
+    import re
+    W = 66  # inner width
+
+    def _row(content: str = "") -> str:
+        plain = re.sub(r"\033\[[^m]*m", "", content)
+        pad = W - len(plain)
+        if pad < 0:
+            pad = 0
+        return f"{_bold_rgb(r, g, b, '│')}{content}{' ' * pad}{_bold_rgb(r, g, b, '│')}"
+
     print()
-    for i, line in enumerate(_BANNER_LINES):
-        r, g, b = _GRADIENT[i % len(_GRADIENT)]
-        print(_bold_rgb(r, g, b, line))
-    print()
-    print(_dim("  ────────────────────────────────────────────────────────────────"))
-    print(
-        f"  {_bold_rgb(0, 210, 190, 'assembly-bills')}"
-        f"  {_dim('·')}  "
-        f"{_dim('Korean National Assembly Bills Dataset')}"
-    )
-    print(
-        f"  {_dim('20th-22nd Assembly  ·  60,925 bills  ·  with propose-reason texts')}"
-    )
-    print(_dim("  ────────────────────────────────────────────────────────────────"))
+    print(f"  {_bold_rgb(r, g, b, '┌' + '─' * W + '┐')}")
+    print(f"  {_row()}")
+    print(f"  {_row('   ' + _bold_rgb(r, g, b, 'assembly-bills'))}")
+    print(f"  {_row('   ' + _dim('Korean National Assembly Bills Dataset'))}")
+    print(f"  {_row()}")
+    print(f"  {_row('   ' + _dim('20th-22nd Assembly') + '  ' + _bold_rgb(r, g, b, '·') + '  ' + _dim('60,925 bills') + '  ' + _bold_rgb(r, g, b, '·') + '  ' + _dim('propose-reason texts'))}")
+    print(f"  {_row()}")
+    print(f"  {_bold_rgb(r, g, b, '└' + '─' * W + '┘')}")
     print()
 
 
