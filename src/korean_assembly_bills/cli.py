@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import sys
 import textwrap
 from typing import Optional
 
@@ -21,14 +22,54 @@ from korean_assembly_bills.loader import (
 
 console = Console()
 
-BANNER = """[dim]
-  ┌─────────────────────────────────────────────────┐
-  │  assembly-bills                                 │
-  │  Korean National Assembly Bills Dataset         │
-  │  20th-22nd Assembly  ·  60,925 bills            │
-  │  with full propose-reason texts                 │
-  └─────────────────────────────────────────────────┘
-[/dim]"""
+# ASCII art banner (figlet "assembly bills" style)
+_BANNER_LINES = [
+    r"                               _     _         _     _ _ _     ",
+    r"   __ _ ___ ___  ___ _ __ ___ | |__ | |_   _  | |__ (_) | |___",
+    r"  / _` / __/ __|/ _ \ '_ ` _ \| '_ \| | | | | | '_ \| | | / __|",
+    r" | (_| \__ \__ \  __/ | | | | | |_) | | |_| | | |_) | | | \__ \\",
+    r"  \__,_|___/___/\___|_| |_| |_|_.__/|_|\__, | |_.__/|_|_|_|___/",
+    r"                                        |___/                   ",
+]
+
+# Gradient: teal -> cyan -> blue (matching open-assembly-mcp style)
+_GRADIENT = [
+    (0, 210, 190),
+    (0, 195, 210),
+    (30, 180, 225),
+    (60, 165, 235),
+    (90, 150, 240),
+    (110, 140, 245),
+]
+
+_COLOR = hasattr(sys.stdout, "isatty") and sys.stdout.isatty()
+
+
+def _bold_rgb(r: int, g: int, b: int, text: str) -> str:
+    return f"\033[1;38;2;{r};{g};{b}m{text}\033[0m" if _COLOR else text
+
+
+def _dim(text: str) -> str:
+    return f"\033[2m{text}\033[0m" if _COLOR else text
+
+
+def _print_banner() -> None:
+    print()
+    for i, line in enumerate(_BANNER_LINES):
+        r, g, b = _GRADIENT[i % len(_GRADIENT)]
+        print(_bold_rgb(r, g, b, line))
+    print()
+    print(_dim("  ────────────────────────────────────────────────────────────────"))
+    print(
+        f"  {_bold_rgb(0, 210, 190, 'assembly-bills')}"
+        f"  {_dim('·')}  "
+        f"{_dim('Korean National Assembly Bills Dataset')}"
+    )
+    print(
+        f"  {_dim('20th-22nd Assembly  ·  60,925 bills  ·  with propose-reason texts')}"
+    )
+    print(_dim("  ────────────────────────────────────────────────────────────────"))
+    print()
 
 
 def _truncate(s: str, maxlen: int = 120) -> str:
@@ -56,7 +97,7 @@ def cli():
 @cli.command()
 def info():
     """Show dataset summary."""
-    console.print(BANNER)
+    _print_banner()
 
     bills = load_bills(columns=["BILL_ID", "AGE", "PROPOSE_DT", "COMMITTEE", "PROC_RESULT"])
     texts = load_texts(columns=["BILL_ID", "scrape_status", "propose_reason"])
