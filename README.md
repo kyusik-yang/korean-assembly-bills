@@ -162,21 +162,26 @@ Individual proposer records linking MPs to bills. 769,773 rows, 14 columns.
 
 ### mp_metadata.parquet
 
-MP biographical information. 889 rows (296 MPs x 3 assemblies + 1 historical), 48 columns.
-
-Key columns:
+MP biographical information. 947 rows (661 unique MPs across 20th-22nd assemblies), 16 columns. Sourced from the `ALLNAMEMBER` API endpoint with per-assembly party data from `BILLINFOPPSR`.
 
 | Column | Type | Description |
 |--------|------|-------------|
+| `_age` | int | Assembly number (20, 21, 22) |
+| `MONA_CD` | str | Unique MP code (matches `NASS_CD` in proposers) |
 | `HG_NM` | str | Name (Korean) |
+| `HJ_NM` | str | Name (Chinese characters) |
 | `ENG_NM` | str | Name (English) |
-| `POLY_NM` | str | Party |
+| `POLY_NM` | str | Party during the assembly (from bill proposals) |
+| `ELECT_POLY_NM` | str | Party at time of election (may differ due to party renames) |
 | `ORIG_NM` | str | Electoral district |
-| `REELE_GBN_NM` | str | Seniority (초선, 재선, 3선, ...) |
+| `ELECT_GBN_NM` | str | Election type (지역구/비례대표) |
 | `CMIT_NM` | str | Standing committee |
-| `_age` | str | Assembly (20, 21, 22) |
-| `SEX_GBN_NM` | str | Gender |
+| `SEX_GBN_NM` | str | Gender (남/여) |
 | `BTH_DATE` | str | Birth date |
+| `REELE_GBN_NM` | str | Seniority (초선, 재선, 3선, ...) |
+| `n_bills` | int | Total bills proposed (lead + co-sponsor) |
+| `n_lead` | int | Bills led as primary proposer |
+| `BRF_HST` | str | Brief career history |
 
 ---
 

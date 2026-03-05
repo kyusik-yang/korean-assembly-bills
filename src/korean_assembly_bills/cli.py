@@ -95,15 +95,20 @@ def info():
     table.add_column("", style="bold")
 
     table.add_row("total bills", f"{len(bills):,}")
+    _ordinal = {20: "20th", 21: "21st", 22: "22nd"}
     for age in sorted(bills["AGE"].unique()):
         n = (bills["AGE"] == age).sum()
-        table.add_row(f"  {age}th assembly", f"{n:,}")
+        label = _ordinal.get(int(age), f"{age}th")
+        table.add_row(f"  {label} assembly", f"{n:,}")
 
     table.add_row("date range", f"{bills['PROPOSE_DT'].min()} ~ {bills['PROPOSE_DT'].max()}")
     table.add_row("committees", f"{bills['COMMITTEE'].nunique()}")
 
     has_text = (texts["scrape_status"] == "ok").sum()
     table.add_row("texts available", f"{has_text:,} ({has_text / len(bills) * 100:.1f}%)")
+
+    mp = load_mp_metadata(columns=["_age", "MONA_CD"])
+    table.add_row("unique MPs", f"{mp['MONA_CD'].nunique():,}")
 
     text_lens = texts.loc[texts["propose_reason"].notna(), "propose_reason"].str.len()
     table.add_row("text length (median)", f"{text_lens.median():.0f} chars")
@@ -287,10 +292,10 @@ def mp(name: str, age: Optional[int]):
         return
 
     for _, m in matches.iterrows():
-        party = m.get("POLY_NM") or m.get("PLPT_NM", "")
-        district = m.get("ORIG_NM") or m.get("ELECD_NM", "")
-        seniority = m.get("REELE_GBN_NM") or m.get("RLCT_DIV_NM", "")
-        cmit = m.get("CMIT_NM") or m.get("BLNG_CMIT_NM", "")
+        party = m.get("POLY_NM", "")
+        district = m.get("ORIG_NM", "")
+        seniority = m.get("REELE_GBN_NM", "")
+        cmit = m.get("CMIT_NM", "")
 
         info_text = (
             f"[dim]name[/dim]        [bold]{m['HG_NM']}[/bold] ({m.get('ENG_NM', '')})\n"

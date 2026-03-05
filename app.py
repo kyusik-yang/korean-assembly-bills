@@ -302,10 +302,10 @@ def page_mp_lookup():
         return
 
     for _, m in matches.iterrows():
-        party = m.get("POLY_NM") or m.get("PLPT_NM", "")
-        district = m.get("ORIG_NM") or m.get("ELECD_NM", "")
-        seniority = m.get("REELE_GBN_NM") or m.get("RLCT_DIV_NM", "")
-        cmit = m.get("CMIT_NM") or m.get("BLNG_CMIT_NM", "")
+        party = m.get("POLY_NM", "")
+        district = m.get("ORIG_NM", "")
+        seniority = m.get("REELE_GBN_NM", "")
+        cmit = m.get("CMIT_NM", "")
 
         meta_html = (
             f"<div class='bill-card'>"

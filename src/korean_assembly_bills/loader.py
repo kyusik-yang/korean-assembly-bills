@@ -80,5 +80,5 @@ def load_proposers(columns: Optional[list] = None) -> pd.DataFrame:
 
 
 def load_mp_metadata(columns: Optional[list] = None) -> pd.DataFrame:
-    """Load MP metadata (889 rows across 20th-22nd assemblies)."""
+    """Load MP metadata (947 rows: 661 unique MPs across 20th-22nd assemblies)."""
     return pd.read_parquet(_resolve_data_dir() / "mp_metadata.parquet", columns=columns)
