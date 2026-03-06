@@ -1,5 +1,6 @@
 """assembly-bills explorer -- interactive Streamlit app."""
 
+import html
 import os
 import textwrap
 
@@ -255,7 +256,7 @@ def page_bill_detail():
         ("proposer", row["PROPOSER"]),
         ("result", row["PROC_RESULT"]),
     ]:
-        meta_html += f"<span class='label'>{label}</span>  <span class='value'>{value}</span><br>"
+        meta_html += f"<span class='label'>{html.escape(str(label))}</span>  <span class='value'>{html.escape(str(value))}</span><br>"
     meta_html += "</div>"
     st.markdown(meta_html, unsafe_allow_html=True)
 
@@ -264,7 +265,7 @@ def page_bill_detail():
     if not text_row.empty and pd.notna(text_row.iloc[0]["propose_reason"]):
         reason = text_row.iloc[0]["propose_reason"]
         st.markdown("### propose reason")
-        st.markdown(f"<div class='propose-reason'>{reason}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div class='propose-reason'>{html.escape(reason)}</div>", unsafe_allow_html=True)
     else:
         st.markdown("<span style='color:#999;'>no propose-reason text available</span>", unsafe_allow_html=True)
 
@@ -314,12 +315,12 @@ def page_mp_lookup():
 
         meta_html = (
             f"<div class='bill-card'>"
-            f"<span class='label'>name</span>  <span class='value'><b>{m['HG_NM']}</b> ({m.get('ENG_NM', '')})</span><br>"
+            f"<span class='label'>name</span>  <span class='value'><b>{html.escape(str(m['HG_NM']))}</b> ({html.escape(str(m.get('ENG_NM', '')))})</span><br>"
             f"<span class='label'>assembly</span>  <span class='value'>{ordinal(m['_age'])}</span><br>"
-            f"<span class='label'>party</span>  <span class='value'>{party}</span><br>"
-            f"<span class='label'>district</span>  <span class='value'>{district}</span><br>"
-            f"<span class='label'>seniority</span>  <span class='value'>{seniority}</span><br>"
-            f"<span class='label'>committee</span>  <span class='value'>{cmit}</span><br>"
+            f"<span class='label'>party</span>  <span class='value'>{html.escape(str(party))}</span><br>"
+            f"<span class='label'>district</span>  <span class='value'>{html.escape(str(district))}</span><br>"
+            f"<span class='label'>seniority</span>  <span class='value'>{html.escape(str(seniority))}</span><br>"
+            f"<span class='label'>committee</span>  <span class='value'>{html.escape(str(cmit))}</span><br>"
             f"</div>"
         )
         st.markdown(meta_html, unsafe_allow_html=True)

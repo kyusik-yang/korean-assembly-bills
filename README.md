@@ -168,6 +168,8 @@ Individual proposer records linking MPs to bills. 769,773 rows, 14 columns.
 
 MP biographical information. 947 rows (661 unique MPs across 20th-22nd assemblies), 16 columns. Sourced from the `ALLNAMEMBER` API endpoint with per-assembly party data from `BILLINFOPPSR`.
 
+> **Note on `CMIT_NM`**: The `ALLNAMEMBER` API only returns committee assignments for the current (22nd) assembly, regardless of the `UNIT_CD` parameter. Committee data for the 20th and 21st assemblies is therefore set to blank rather than showing incorrect 22nd-assembly committee names.
+
 | Column | Type | Description |
 |--------|------|-------------|
 | `_age` | int | Assembly number (20, 21, 22) |
@@ -179,7 +181,7 @@ MP biographical information. 947 rows (661 unique MPs across 20th-22nd assemblie
 | `ELECT_POLY_NM` | str | Party at time of election (may differ due to party renames) |
 | `ORIG_NM` | str | Electoral district |
 | `ELECT_GBN_NM` | str | Election type (지역구/비례대표) |
-| `CMIT_NM` | str | Standing committee |
+| `CMIT_NM` | str | Standing committee (22nd assembly only; blank for 20th/21st - see note below) |
 | `SEX_GBN_NM` | str | Gender (남/여) |
 | `BTH_DATE` | str | Birth date |
 | `REELE_GBN_NM` | str | Seniority (초선, 재선, 3선, ...) |
