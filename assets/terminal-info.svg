@@ -1,8 +1,6 @@
-<svg class="rich-terminal" viewBox="0 0 897 830.8" xmlns="http://www.w3.org/2000/svg">
+<svg class="rich-terminal" width="897" height="831" viewBox="0 0 897 830.8" xmlns="http://www.w3.org/2000/svg">
     <!-- Generated with Rich https://www.textualize.io -->
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&amp;display=swap" rel="stylesheet">
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
 
     @font-face {
         font-family: "Fira Code";
