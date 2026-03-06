@@ -117,7 +117,7 @@ Bill metadata from the Open National Assembly API. 60,925 rows, 24 columns.
 | `DETAIL_LINK` | str | Link to bill detail page |
 | `PROPOSER` | str | Lead proposer name + count |
 | `MEMBER_LIST` | str | Link to full member list |
-| `RST_MONA_CD` | str | Lead proposer's MP code |
+| `RST_MONA_CD` | str | Lead proposer MP code (comma-separated for joint leads) |
 | `COMMITTEE_ID` | str | Committee code |
 | `CMT_PROC_RESULT_CD` | str | Committee processing result |
 | `CMT_PROC_DT` | str | Committee processing date |
@@ -128,7 +128,6 @@ Bill metadata from the Open National Assembly API. 60,925 rows, 24 columns.
 | `LAW_PROC_RESULT_CD` | str | Judiciary committee result |
 | `LAW_PRESENT_DT` | str | Judiciary committee presentation date |
 | `LAW_SUBMIT_DT` | str | Judiciary committee submission date |
-| `RST_MONA_CD` | str | Lead proposer member code |
 | `PUBL_MONA_CD` | str | Public proposer codes (semicolon-separated) |
 | `RST_PROPOSER` | str | Lead proposer display name |
 | `PUBL_PROPOSER` | str | Public proposer display names |
@@ -242,6 +241,14 @@ The data was collected from two sources:
    - This two-step process is necessary because the API does not provide the propose-reason text
 
 All 60,925 bills across the 20th-22nd assemblies were scraped, with a 99.4% success rate (60,546 texts obtained).
+
+---
+
+## Known Limitations
+
+- **Proposer list cap**: The Open Assembly API returns a maximum of 100 proposer records per bill. 208 bills (mostly mass-signature bills with 100+ co-sponsors) have truncated proposer lists. These bills can be identified by having exactly 100 rows in `proposers.parquet`.
+- **Committee data for past assemblies**: `CMIT_NM` in `mp_metadata.parquet` is only available for the 22nd Assembly. The API does not return historical committee assignments for the 20th or 21st Assembly (see note in data dictionary).
+- **177 joint lead proposals**: Some 22nd Assembly bills have multiple lead proposers (comma-separated `RST_MONA_CD`). Analysis assuming a single lead proposer per bill should account for these cases.
 
 ---
 

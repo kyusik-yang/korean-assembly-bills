@@ -326,11 +326,12 @@ def page_mp_lookup():
         st.markdown(meta_html, unsafe_allow_html=True)
 
     # Bills
+    matched_names = matches["HG_NM"].unique().tolist()
     prop = load_proposers()
-    lead_bills = prop[(prop["PPSR_NM"] == mp_name) & (prop["REP_DIV"].notna())]
+    lead_bills = prop[(prop["PPSR_NM"].isin(matched_names)) & (prop["REP_DIV"].notna())]
     if not lead_bills.empty:
         led = bills[bills["BILL_ID"].isin(lead_bills["BILL_ID"])].sort_values("PROPOSE_DT", ascending=False)
-        st.markdown(f"### {len(led):,} bills led by {mp_name}")
+        st.markdown(f"### {len(led):,} bills led by {', '.join(matched_names)}")
         st.dataframe(
             led[["AGE", "BILL_NO", "PROPOSE_DT", "COMMITTEE", "BILL_NAME"]].rename(columns={
                 "AGE": "assembly", "BILL_NO": "bill_no", "PROPOSE_DT": "date",

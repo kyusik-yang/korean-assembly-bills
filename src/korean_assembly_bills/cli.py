@@ -308,17 +308,20 @@ def mp(name: str, age: Optional[int]):
         console.print(Panel(info_text, border_style="dim", padding=(1, 2)))
 
     # Bills where this MP is lead proposer
+    matched_names = matches["HG_NM"].unique().tolist()
     prop = load_proposers(columns=["BILL_ID", "PPSR_NM", "REP_DIV"])
-    lead_bills = prop[(prop["PPSR_NM"] == name) & (prop["REP_DIV"].notna())]
+    lead_bills = prop[(prop["PPSR_NM"].isin(matched_names)) & (prop["REP_DIV"].notna())]
 
     if not lead_bills.empty:
         bills = load_bills(columns=["BILL_ID", "BILL_NO", "BILL_NAME", "AGE", "PROPOSE_DT"])
         led = bills[bills["BILL_ID"].isin(lead_bills["BILL_ID"])].sort_values(
             "PROPOSE_DT", ascending=False
         )
+        if age:
+            led = led[led["AGE"] == age]
 
         table = Table(
-            title=f"[bold]{len(led):,}[/bold] [dim]bills led by[/dim] {name}",
+            title=f"[bold]{len(led):,}[/bold] [dim]bills led by[/dim] {', '.join(matched_names)}",
             border_style="dim",
         )
         table.add_column("age", style="dim", width=3, justify="right")
