@@ -51,6 +51,10 @@ print(df.shape)  # (60925, 25)
 
 ### Option C: Interactive App
 
+**[kr-bills.streamlit.app](https://kr-bills.streamlit.app/)** - browse, search, and explore bills in your browser.
+
+Or run locally:
+
 ```bash
 pip install korean-assembly-bills[app]
 streamlit run app.py
