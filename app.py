@@ -7,6 +7,11 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+def ordinal(n):
+    n = int(n)
+    return f"{n}{'th' if 11 <= n % 100 <= 13 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+
+
 st.set_page_config(
     page_title="assembly-bills",
     page_icon="",
@@ -162,7 +167,7 @@ def page_overview():
 
     st.markdown("### bills by assembly")
     age_counts = bills.groupby("AGE").size().reset_index(name="count")
-    age_counts["AGE"] = age_counts["AGE"].astype(str) + "th"
+    age_counts["AGE"] = age_counts["AGE"].apply(ordinal)
     fig2 = px.bar(
         age_counts, x="AGE", y="count",
         color_discrete_sequence=["#4a4a4a"],
@@ -183,7 +188,7 @@ def page_search():
 
     col1, col2, col3 = st.columns([3, 1, 1])
     keyword = col1.text_input("keyword", placeholder="e.g. 인공지능, 부동산, 데이터")
-    age_filter = col2.selectbox("assembly", [None, 20, 21, 22], format_func=lambda x: "all" if x is None else f"{x}th")
+    age_filter = col2.selectbox("assembly", [None, 20, 21, 22], format_func=lambda x: "all" if x is None else ordinal(x))
     search_text = col3.checkbox("search in text", value=False)
 
     if not keyword:
@@ -244,7 +249,7 @@ def page_bill_detail():
         ("bill_id", bill_id),
         ("bill_no", row["BILL_NO"]),
         ("name", row["BILL_NAME"]),
-        ("assembly", f"{row['AGE']}th"),
+        ("assembly", ordinal(row['AGE'])),
         ("date", row["PROPOSE_DT"]),
         ("committee", row["COMMITTEE"]),
         ("proposer", row["PROPOSER"]),
@@ -310,7 +315,7 @@ def page_mp_lookup():
         meta_html = (
             f"<div class='bill-card'>"
             f"<span class='label'>name</span>  <span class='value'><b>{m['HG_NM']}</b> ({m.get('ENG_NM', '')})</span><br>"
-            f"<span class='label'>assembly</span>  <span class='value'>{m['_age']}</span><br>"
+            f"<span class='label'>assembly</span>  <span class='value'>{ordinal(m['_age'])}</span><br>"
             f"<span class='label'>party</span>  <span class='value'>{party}</span><br>"
             f"<span class='label'>district</span>  <span class='value'>{district}</span><br>"
             f"<span class='label'>seniority</span>  <span class='value'>{seniority}</span><br>"
