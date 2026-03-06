@@ -1,26 +1,9 @@
-<svg class="rich-terminal" viewBox="0 0 909 611.1999999999999" xmlns="http://www.w3.org/2000/svg">
+<svg class="rich-terminal" width="909" height="612" viewBox="0 0 909 611.2" xmlns="http://www.w3.org/2000/svg">
     <!-- Generated with Rich https://www.textualize.io -->
     <style>
 
-    @font-face {
-        font-family: "Fira Code";
-        src: local("FiraCode-Regular"),
-                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),
-                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");
-        font-style: normal;
-        font-weight: 400;
-    }
-    @font-face {
-        font-family: "Fira Code";
-        src: local("FiraCode-Bold"),
-                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),
-                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");
-        font-style: bold;
-        font-weight: 700;
-    }
-
     .terminal-866838442-matrix {
-        font-family: Fira Code, monospace;
+        font-family: 'Fira Code', monospace;
         font-size: 20px;
         line-height: 24.4px;
         font-variant-east-asian: full-width;
