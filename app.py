@@ -15,7 +15,7 @@ def ordinal(n):
 
 st.set_page_config(
     page_title="assembly-bills",
-    page_icon="",
+    page_icon="\U0001f3db",
     layout="wide",
     initial_sidebar_state="expanded",
 )
